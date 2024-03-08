@@ -1,0 +1,19 @@
+.navbar-item {
+  display: flex;
+  align-items: stretch;
+}
+.navbar-item-heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(138, 184, 224);
+}
+a {
+  padding: 20px 40px;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(60, 137, 167);
+}
+a[selected="true"] {
+  color: rebeccapurple;
+}
