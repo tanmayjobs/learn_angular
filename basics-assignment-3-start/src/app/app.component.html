@@ -1,0 +1,7 @@
+<input [type]="showPassword ? 'text' : 'password'">
+<button (click)="togglePasswordView()">Show Password</button>
+<ul>
+  <li *ngFor="let log of logs">
+    <p [ngStyle]="color: red">{{log}}</p>
+  </li>
+</ul>

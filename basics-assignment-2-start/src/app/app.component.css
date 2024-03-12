@@ -1,0 +1,17 @@
+* {
+    margin: 5px;
+}
+div{
+    padding: 10px;
+    width: min-content;
+    margin: auto;
+    border-radius: 12px;
+}
+button{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+.online{
+    background-color: tomato;
+}

@@ -1,0 +1,29 @@
+<div [ngStyle]="{ backgroundColor: bgColor }">
+  <input type="text" placeholder="Name" [(ngModel)]="userName" />
+  <button
+    type="button"
+    (click)="clearName()"
+    [disabled]="userName.trim() == ''"
+    [ngClass]="{online: userName !== ''}"
+  >
+    Clear
+  </button>
+
+  <br />
+
+  <blockquote *ngFor="let item of items">
+    {{ item }} {{ userName }}
+  </blockquote>
+
+  <ng-template #enterName>
+    <p>Enter Your Name</p>
+  </ng-template>
+
+  @if (userName.trim() != ''){
+  <blockquote>
+    {{ userName }}
+  </blockquote>
+  } @else {
+  <p>Enter Your Name</p>
+  }
+</div>
